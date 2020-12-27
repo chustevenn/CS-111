@@ -1,0 +1,14 @@
+NAME: Steven Chu
+EMAIL: schu92620@gmail.com
+ID: 905094800
+
+The contents of this directory are as follows:
+
+lab3b.py: A Python source module that takes an input of one CSV file containing the results of a file system
+	  interpretation in the format specified by Lab 3A. This source module performs an analysis of the
+ 	  file system summary and outputs any inconsistencies found.
+
+
+Makefile: A Makefile supporting the specified default, dist, and clean options.
+
+README: A file containing information about the directory contents.

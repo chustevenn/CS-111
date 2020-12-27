@@ -1,0 +1,23 @@
+NAME: Steven Chu
+EMAIL: schu92620@gmail.com
+ID: 905094800
+
+Beaglebone Serial Number: MOB180418003
+
+WiFi MAC Address: f0:45:da:76:e2:11
+
+The contents of this directory are as follows:
+
+my_beaglebone.jpg: A selfie of myself holding my running Beaglebone
+
+connected.png: A screenshot of the USB terminal command session in my Beaglebone showing the name I gave it, along with the configured network access.
+
+copy.png: A screenshot of the scp command being utilized to copy a hello world program from my laptop to my Beaglebone
+
+build_run.png: A screenshot from a WiFi SSH session on my Beaglebone, showing the compiling and running of a hello world program.
+
+git.png: A screenshot from a Wifi SSH session on my Beaglebone, showing the install and cloning of a personal repository
+
+README: This file contains the serial number of my Beaglebone, the WiFi MAC address, and a description of the files in the directory.
+
+Makefile: A Makefile to build the distribution tarball.

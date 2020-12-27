@@ -1,0 +1,25 @@
+NAME: Steven Chu
+EMAIL: schu92620@gmail.com
+ID: 905094800
+
+The contents of this directory are as follows:
+
+1) lab1a.c
+
+This compiles into an executable that puts the keyboard into character-at-a-time, no-echo input mode.
+Otherwise known as non-canonical input mode with no echo.
+This executable also supports the option:
+
+	--shell=PROGRAM		User passes an argument to this option to specify a program to run
+
+2) Makefile
+
+This is a Makefile with the following options:
+
+	default: Compile the executable with extra warnings
+	clean: Remove files created by 'make' or 'make dist'
+	dist: Compress and create the distribution tarball
+
+3) README
+
+Contains information about the directory.

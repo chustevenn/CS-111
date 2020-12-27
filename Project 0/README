@@ -1,0 +1,50 @@
+NAME: Steven Chu
+EMAIL: schu92620@gmail.com
+ID: 905094800
+
+DIRECTORY CONTENTS
+
+lab0.c - This program copies standard input to standard output. If no errors are encountered, this
+program returns with exit code 0.
+
+This program has four (optional) arguments:
+	--input=filename ... to read from a specified file in place of standard input
+	--output=filename ... to write to a specified file in place of standard output
+	--segfault ... to force a segmentation fault
+	--catch ... to register a signal handler to catch a segmentation fault
+
+Makefile - provides shortcuts to various tasks:
+	default (make) ... compiles the lab0 executable
+	dist (make dist) ... generates the distribution tarball
+	clean (make clean) ... deletes files created by make and make dist
+	check (make check) ... performs a cursory smoke-test of the lab0 executable
+
+smoke-test.sh - performs a cursory test of the required functionalities of the lab0 executable.
+	1. Check if program copies from standard input to standard output.
+	2. Check if program copies from file input to standard output.
+	3. Check if program copies from standard input to file output.
+	4. Check if program copies from file input to file output.
+	5. Check if segmentation fault option works.
+	6. Check if catch option works - and results in exit code 4.
+	7. Check if invalid input handler works - and results in exit code 2.
+	8. Check if invalid output handler works - and results in exit code 3.
+	9. Check if invalid argument handler works - and results in exit code 1.
+
+backtrace.png - photo showing the backtrace of the program in GDB when a segmentation fault occurred.
+
+breakpoint.png - photo showing GDB being used to examine the null pointer used to throw a segmentation fault.
+
+USEFUL SOURCES
+
+I drew significantly from the following sources while working on this project:
+
+1) https://ccle.ucla.edu/pluginfile.php/3759773/mod_resource/content/0/Week%201.pdf
+
+	TA Tengyu Liu's discussion slides from the Friday Week 0 discussion. I mostly used these slides
+	and the Linux man pages to learn about the various system calls and APIs used in this project.
+
+2) https://devhints.io/bash
+	
+	This source was very helpful when it came to writing the smoke-test script. This was my first
+	time writing a significant shell script with control structures, so I used this reference to
+	figure out the syntax. 

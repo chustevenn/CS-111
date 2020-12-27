@@ -1,0 +1,15 @@
+NAME: Steven Chu
+EMAIL: schu92620@gmail.com
+ID: 905094800
+
+This file contains information about the directory and its contents.
+
+lab4c_tcp.c - A C source module for an embedded system application that communicates with a specified server
+via TCP connection, and reports as a remote temperature sensor.
+
+lab4c_tls.c - A C source module for an embedded system application that communicates with a specified server
+using SSL communication, and reports as a remote temperature sensor.
+
+Makefile - A Makefile supporting the default, dist, and clean options.
+
+README - Contains information about the directory and its contents.

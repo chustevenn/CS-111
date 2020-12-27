@@ -1,0 +1,20 @@
+NAME: Steven Chu
+EMAIL: schu92620@gmail.com
+ID: 905094800
+
+The contents are as follows:
+
+lab4b.c: A C source code module for an embedded application that runs on an embedded system. It continuously
+	 runs and reports temperature based off sensor input. It supports several arguments:
+
+	--log=filename		Creates a log file named filename that contains all the temperature readings
+				and runtime commands.
+	--scale=F/C		Input argument as either F or C for readings in Fahrenheit and Celsius,
+				respectively.
+	--period=#		Tells the program to report temperature every # seconds.
+
+Makefile: A Makefile supporting the default, check, dist, and clean options.
+
+README: A file containing descriptions of each of the files included in this directory.
+
+Sources: Tengyu's Week 7 Discussion Slides, and sources linked in spec.

@@ -1,0 +1,51 @@
+NAME: Steven Chu
+EMAIL: schu92620@gmail.com
+ID: 905094800
+
+The contents of this directory are as follows:
+
+1) lab1b-server.c
+
+This compiles into an executable that creates and binds a TCP socket. It listens on a specified port, and 
+accepts a connection when it is made. After this connection is made, it will fork a child shell process
+and use that shell to process commands sent from the client.
+
+This executable supports the options:
+	
+	--port=PORT#		Mandatory option, user passes an argument to specify the port of the network socket
+	--shell=PROGRAM		User passes an argument to this option to specify the program run by child
+	--compress		Option to enable compression of all traffic in both directions on the socket
+
+
+2) lab1b-client.c
+
+This compiles into an executable that connects to a running server on the same port. It then puts the 
+keyboard into character-at-a-time, no-echo input mode. Otherwise knwon as non-canonical input mode with
+no echo. It sends input to the server, and outputs the server's responses to the terminal.
+
+This executable supports the options:
+
+	--port=PORT#		Mandatory option, user passes an argument to specify the port of the network socket
+	--log=FILE		Option to log all data sent and received by the client into FILE.
+	--compress		Option to enable compression of all traffic in both directions on the socket
+
+
+2) Makefile
+
+This is a Makefile with the following options:
+
+	default: Compile the lab1b-client and lab1b-server executables with extra warnings
+	client: Compile the lab1b-client executable with extra warnings
+	server: Compile the lab1b-server executable with extra warnings
+	clean: Remove files created by 'make', 'make client', 'make server', or 'make dist'
+	dist: Compress and create the distribution tarball
+
+3) README
+
+Contains information about the directory
+
+
+Notable Source:
+
+Siddharth Dharm's Week 3 Discussion Slides:
+https://ccle.ucla.edu/pluginfile.php/3804552/mod_resource/content/0/Week3.pdf

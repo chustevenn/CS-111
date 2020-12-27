@@ -1,0 +1,13 @@
+NAME: Steven Chu
+EMAIL: schu92620@gmail.com
+ID: 905094800
+
+The contents of this directory are as follows:
+
+lab3a.c: A C source module that takes a single argument, the name of a EXT2 file system
+	 image. It then interprets the file system image and prints a summary in CSV format
+	 to standard out.
+
+Makefile: A Makefile supporting the standard default, dist, and clean options
+
+README: A file containing a short descriptions of the contents of this directory.
